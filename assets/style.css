@@ -1,0 +1,222 @@
+/* Custom App CSS Below --------------------------------- */
+/*Fonts ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Main Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+body {
+  background: #ffffff;  
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Open Sans";
+  font-weight: bold;
+  letter-spacing: 2.1px;
+  font-size: 21px;
+  padding-left: 12px;
+}
+p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 12px;
+}
+a {
+  text-decoration: none;
+}
+.bg-grey{
+  background-color: #a5a19e;
+}
+.text-padding{
+  padding: 5px;
+}
+/* Graph Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.div-for-charts{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+#histogram {
+  flex-grow: 1 
+}
+#map-graph {
+  flex-grow: 1 
+}
+.mapboxgl-canvas, .mapboxgl-map {
+  min-width: 100%;
+}
+/* Graph Control Objects ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.div-user-controls {
+  padding-left: 55px;
+  padding-top: 64px;
+  
+}
+.div-for-dropdown {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.div-for-slider {
+  width: 97%;
+  text-align: center;
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+  color: black;
+  
+}
+
+#bar-selector .Select-multi-value-wrapper{
+  max-height: 82px;
+  overflow-y: auto;
+  margin: 0px 0px -3px 0px;
+}
+
+.Select-control{
+  border: 0.5px solid #00000044;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: rgb(0, 0, 0);
+}
+._dash-app-content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
+  color: #000000;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#date-range{
+  width: 100%;
+  border: none;
+}
+
+
+.DateInput.DateInput_1{
+  width: 45%;
+}
+.DateRangePickerInput__withBorder{
+  border:none;
+}
+
+.DateRangePickerInput.DateRangePickerInput_1.DateRangePickerInput__withBorder.DateRangePickerInput__withBorder_2{
+  border: 0.0px solid #d4d0ce;
+  width: 100%;
+  background-color: #d4d0ce;
+  display: inline-block;
+}
+.DateRangePickerInput_1 {
+  border: 0.0px solid #d4d0ce;
+  display: inline-block;
+  background-color: #b6b2af;
+}
+
+#plot2{
+  width: 60%;
+}
+#plot3{
+  width: 40%;
+}
+
+#plot5, #plot6{
+  width: 50%;
+}
+
+.g1{
+  display: flex;
+}
+
+/* For Mobile Phones and small screens ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@media only screen and (max-width: 768px) {
+
+  #plot2{
+    width: 100%;
+  }
+  #plot3{
+    width: 100%;
+  }
+  
+  #plot5, #plot6{
+    width: 100%;
+  }
+  
+  .g1{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .three, .nine {
+      min-width: 100%;
+ }
+  h1, h2, h3, p {
+      text-align: center;
+ }
+  body {
+      display: block;
+      margin: 0px;
+      overflow-y: scroll;
+  }
+  .div-for-charts {
+      padding: 0px;
+      width: 100%;
+      text-align: center;
+ }
+
+ .div-user-controls {
+    padding: 32px;
+ }
+ 
+ .side-by-side{
+    display: inline-block;
+    width: 48%;
+  }
+
+   
+ .side-by-side-right{
+    display: inline-block;
+    width: 48%;
+    float:right;
+  }
+  .div-for-charts{
+    margin: 0px;
+  }
+  .DateRangePickerInput{
+    width: 100%;
+  }
+
+  .DateInput.DateInput_1{
+    width: 47%;
+  }
+} 
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e1e1e !important; 
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d8d8d870 !important; 
+}
+
+.CalendarMonth_table td {
+  padding: unset;  
+}
